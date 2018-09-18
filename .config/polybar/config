@@ -162,6 +162,7 @@ label-mode-background = ${bar/top.background}
 ; focused = Active workspace on focused monitor
 label-focused = %icon%
 label-focused-background = #B4000000
+label-focused-foreground = #FFFFFFFF
 label-focused-underline = ${bar/top.line-color}
 label-focused-padding = 3
 
