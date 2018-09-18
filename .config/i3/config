@@ -217,7 +217,7 @@ smart_borders on
 exec --no-startup-id ~/i3init.sh
 # exec --no-startup-id feh --bg-fill '/home/finp/Picture/Pic02.jpg'
 exec --no-startup-id fcitx
-exec_always --no-startup-id killall polybar; polybar top
+exec_always --no-startup-id killall polybar; polybar top; polybar bottom
 exec --no-startup-id ss-local -c ~/.config/shadowsocks/config.json
 
 # auto run program
