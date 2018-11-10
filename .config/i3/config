@@ -143,8 +143,8 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 # Use `xprop` to find program name and click the second entry under "WM_CLASS(STRING)"
 #assign [class="Terminator"] $ws1
 assign [class="Google-chrome"] $ws3
-assign [class="MATLAB R2018a"] $ws4
-assign [class="jetbrains-clion"] $ws4
+assign [class="MATLAB R2018a"] $ws2
+assign [class="jetbrains-clion"] $ws2
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

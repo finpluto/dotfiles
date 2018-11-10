@@ -58,7 +58,7 @@ let g:ale_linters = {
 \}
 
 " airline
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
 " 缩进指示线
@@ -158,11 +158,9 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
-" nnoremap <c-v> :vsplit<cr>
 nnoremap <c-n> :vnew<cr>
 
 nnoremap <leader>sf :w<cr>    " 保存文件
-" nnoremap <leader>q  <C-W>q    " 关闭窗口
 nnoremap <leader>q  :q<cr>    " 关闭窗口
 nnoremap <leader>dt :NERDTreeToggle<cr>    " 打开NerdTree
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>    " 跳转定义
