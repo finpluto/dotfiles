@@ -225,4 +225,5 @@ exec --no-startup-id i3-msg 'workspace 1; exec --no-startup-id terminator'
 exec --no-startup-id i3-msg 'workspace 1; exec --no-startup-id terminator'
 
 # auto mount windows partition
-exec --no-startup-id sudo mount /dev/nvme0n1p3 /mnt/windows
+exec --no-startup-id sudo mount /dev/nvme1n1p3 /mnt/windows
+exec --no-startup-id sudo mount /dev/nvme0n1p2 /mnt/Storage
