@@ -30,7 +30,7 @@ font pango:DejaVuSans 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 
 # start thunar
 #bindsym $mod+e exec --no-startup-id i3-msg 'workspace 4; exec --no-startup-id thunar'
@@ -216,9 +216,7 @@ smart_borders on
 # exec --no-startup-id compton -b
 exec --no-startup-id ~/i3init.sh
 # exec --no-startup-id feh --bg-fill '/home/finp/Picture/Pic02.jpg'
-exec --no-startup-id fcitx
-# exec_always --no-startup-id killall polybar; polybar top; polybar bottom
-exec --no-startup-id ss-local -c ~/.config/shadowsocks/config.json
+# exec --no-startup-id fcitx5
 
 # auto run program
 exec --no-startup-id i3-msg 'workspace 1; exec --no-startup-id terminator'
