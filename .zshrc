@@ -96,3 +96,4 @@ source $ZSH/oh-my-zsh.sh
 eval "$(thefuck --alias)"
 
 alias ls="ls -l --color=auto"
+alias rm="rm -i"

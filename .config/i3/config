@@ -143,7 +143,6 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 # Use `xprop` to find program name and click the second entry under "WM_CLASS(STRING)"
 #assign [class="Terminator"] $ws1
 assign [class="Google-chrome"] $ws3
-assign [class="MATLAB R2018a"] $ws2
 assign [class="jetbrains-clion"] $ws2
 
 # reload the configuration file
@@ -193,8 +192,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 2%-
 bindsym XF86AudioMute exec --no-startup-id amixer set Master toggle
 
 # for lightness control
-bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
-bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
+bindsym XF86MonBrightnessUp exec --no-startup-id sudo light -A 10
+bindsym XF86MonBrightnessDown exec --no-startup-id sudo light -U 10
 
 # colors
 # class                 border  backgr. text    indicator child_border
@@ -212,16 +211,18 @@ gaps outer 4
 smart_gaps on
 smart_borders on
 
-# auto setting background on start up
-# exec --no-startup-id compton -b
-exec --no-startup-id ~/i3init.sh
-# exec --no-startup-id feh --bg-fill '/home/finp/Picture/Pic02.jpg'
-# exec --no-startup-id fcitx5
+exec_always --no-startup-id compton -b
+exec_always --no-startup-id feh --bg-fill '/home/finp/Picture/CommonPic/ar15&sopmod2.jpg'
+exec_always --no-startup-id xrandr --dpi 120
+exec --no-startup-id fcitx5
+
+# no required bootup programs
+exec --no-startup-id i3init.sh
 
 # auto run program
-exec --no-startup-id i3-msg 'workspace 1; exec --no-startup-id terminator'
-exec --no-startup-id i3-msg 'workspace 1; exec --no-startup-id terminator'
+# exec --no-startup-id i3-msg 'workspace 1; exec --no-startup-id terminator'
+# exec --no-startup-id i3-msg 'workspace 1; exec --no-startup-id terminator'
 
 # auto mount windows partition
-exec --no-startup-id sudo mount /dev/nvme1n1p3 /mnt/windows
-exec --no-startup-id sudo mount /dev/nvme0n1p2 /mnt/Storage
+# exec --no-startup-id sudo mount /dev/nvme1n1p3 /mnt/windows
+# exec --no-startup-id sudo mount /dev/nvme0n1p2 /mnt/Storage
