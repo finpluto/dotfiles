@@ -211,18 +211,11 @@ gaps outer 4
 smart_gaps on
 smart_borders on
 
-exec_always --no-startup-id compton -b
-exec_always --no-startup-id feh --bg-fill '/home/finp/Picture/CommonPic/ar15&sopmod2.jpg'
-exec_always --no-startup-id xrandr --dpi 120
-exec --no-startup-id fcitx5
+exec --no-startup-id xrandr --output DP1 --mode 1440x900 --pos 1920x0 --rotate normal --output eDP1 --primary --dpi 120 --mode 1920x1080 --pos 0x0 --rotate normal 
+exec --no-startup-id picom -b
+exec --no-startup-id feh --bg-fill '/home/finp/Pictures/CommonPic/ar15sopmod2.jpg'
+# exec --no-startup-id xrandr --dpi 120
+exec_always --no-startup-id ibus-daemon -xrd
 
 # no required bootup programs
-exec --no-startup-id i3init.sh
-
-# auto run program
-# exec --no-startup-id i3-msg 'workspace 1; exec --no-startup-id terminator'
-# exec --no-startup-id i3-msg 'workspace 1; exec --no-startup-id terminator'
-
-# auto mount windows partition
-# exec --no-startup-id sudo mount /dev/nvme1n1p3 /mnt/windows
-# exec --no-startup-id sudo mount /dev/nvme0n1p2 /mnt/Storage
+exec --no-startup-id ~/dotfiles/i3init.sh
